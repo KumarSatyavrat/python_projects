@@ -1,0 +1,27 @@
+from random import randint
+t = ['stone','paper','scissor']
+computer = t[randint(0,2)]
+player  = False
+
+while player == False:
+  player = input("stone,paper,scissor? ")
+  print("computer value is:",computer)
+  if player == computer:
+    print("!!!!tie!!!!!!")
+  elif player == 'stone':
+    if computer == 'paper':
+      print(" computer wins ")
+    else:
+      print(" player wins ")
+  elif player == 'paper':
+    if computer == 'stone':
+      print(" player wins ")
+    else:
+      print(" computer wins ")
+  elif player == 'scissor':
+    if computer == 'paper':
+      print(" player wins ")
+    else:
+      print(" computer wins ")
+  else:
+    print("enter valid input!")
